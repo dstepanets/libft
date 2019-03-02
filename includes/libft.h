@@ -16,6 +16,11 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include <stdarg.h>
+# include <limits.h>
+# include <stdio.h>
+
+# include "ft_printf.h"
 
 /*
 ** Part 1 - Libc functions

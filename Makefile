@@ -79,28 +79,47 @@ SRC_NAME =	ft_memset.c \
 			ft_recursive_power.c \
 			ft_sqrt.c \
 			get_next_line.c
+PRINTF_DIR = ./ft_printf/
+PRINTF_SRC =	ft_printf.c \
+				parser.c \
+				convert_c_percent.c \
+				convert_s.c \
+				convert_di.c \
+				convert_di2.c \
+				convert_u.c \
+				convert_o.c \
+				convert_x.c \
+				convert_p.c \
+				convert_f.c \
+				convert_f2.c \
+				convert_b.c \
+				colors1.c \
+				colors2.c \
+				colors3.c \
+				pf_itoa_base.c \
+				pf_strjoin.c
 
-SRC = $(addprefix $(SRC_DIR), $(SRC_NAME))
-OBJS = $(SRC_NAME:.c=.o)
+SRC = $(addprefix $(SRC_DIR), $(SRC_NAME)) $(addprefix $(PRINTF_DIR), $(PRINTF_SRC))
+OBJS = $(SRC_NAME:.c=.o) $(PRINTF_SRC:.c=.o)
 
 .PHONY: all clean fclean re
 
 all: $(NAME)
 
 $(NAME):
-	$(CC) $(FLAGS) -c $(SRC) -I $(HEADS)
+	@$(CC) $(FLAGS) -c $(SRC) -I $(HEADS)
 	@echo "\033[32mLibft object files compiled.\033[0m"
-	ar -rc $(NAME) $(OBJS)
+	@ar -rc $(NAME) $(OBJS)
 	@echo "\033[32mlibft.a compiled.\033[0m"
-	ranlib $(NAME)
+	@ranlib $(NAME)
 	@echo "\033[32mlibft.a indexed.\033[0m"
 
 clean:
-	rm -f $(OBJS)
+	@rm -f $(OBJS)
 	@echo "\033[31mLibft object files removed.\033[0m"
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 	@echo "\033[31mlibft.a removed.\033[0m"
 	
 re: fclean all
