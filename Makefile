@@ -79,7 +79,10 @@ SRC_NAME	=	ft_memset.c \
 				ft_range.c \
 				ft_recursive_power.c \
 				ft_sqrt.c \
-				get_next_line.c
+				get_next_line.c \
+				ft_isblank.c \
+				ft_isspace.c \
+				ft_isint.c
 
 PRINTF_DIR 	=	./ft_printf/
 PRINTF_SRC 	=	ft_printf.c \

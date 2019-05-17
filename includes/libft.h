@@ -112,7 +112,10 @@ int					*ft_range(int min, int max);
 int					ft_recursive_power(int nb, int power);
 int					ft_sqrt(int nb);
 /*
-** Part 5 - Next projects
+** Part 5 - Next additions
 */
+int					ft_isspace(char c);
+int					ft_isblank(char c);
+int					ft_isint(char *s);
 
 #endif
