@@ -73,6 +73,6 @@ TEXT COLORS:
 {darkgray}
 
 BACKGROUND COLORS:
-{_}	- default
-{_*}		- where * is the same as text colors.
+{_}	  - default
+{_*}  - where * is the same as text colors.
 ```
