@@ -6,7 +6,7 @@ Library of C functions, coded during my School 42 studies.
 
 ## Description
 
-In C projects of School 42 we are not allowed to use almost any standard library functions. Instead, we had to code our own versions of them.
+In C projects of School 42, we are not allowed to use almost any standard library functions. Instead, we had to code our own versions of them.
 
 This library incorporates 3 school projects plus a few additional functions.
 
@@ -18,7 +18,7 @@ This library incorporates 3 school projects plus a few additional functions.
 
 ## Usage
 
-1. Compile with `make`. This produses the static library `libft.a`.
+1. Compile with `make`. This produces the static library `libft.a`.
 2. Include the libft header into your source files: `#include "libft/includes/libft.h"`
 3. Compile your source files with `libft.a`.
 
@@ -36,7 +36,7 @@ This function was a separate project and took a while to write.
 
 ### Colors
 
-As a bonus, my printf also supports styled/colored output to terminal. As an example, here is [Corewar](https://github.com/bjarne0706/corewar) log printed with my ft_printf.
+As a bonus, my printf also supports styled/colored output to the terminal. As an example, here is [Corewar](https://github.com/bjarne0706/corewar) log printed with my ft_printf.
 
 ![](subjects/readme_img/corewar_log.png)
 
@@ -60,7 +60,7 @@ FORMATTING:
 {I} - inverted
 
 TEXT COLORS:
-{-}	- default
+{-}    - default
 {red}
 {blue}
 {green}
@@ -73,6 +73,6 @@ TEXT COLORS:
 {darkgray}
 
 BACKGROUND COLORS:
-{_}	 - default
+{_}     - default
 {_*}  - where * is the same as text colors.
 ```
